@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     colors: {
-      blue: "hsl(214.58deg 55.14% 20.98%)",
+      blue: "hsl(213.75deg 100% 12.55%)",
       purple: "#7e5bef",
       pink: "#ff49db",
       orange: "#ff7849",
