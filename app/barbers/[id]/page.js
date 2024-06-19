@@ -1,7 +1,10 @@
-import React from "react";
-
+import BarberDetail from "@/components/BarberDetail";
 const BarbersDetail = () => {
-  return <div></div>;
+  return (
+    <div>
+      <BarberDetail />
+    </div>
+  );
 };
 
 export default BarbersDetail;

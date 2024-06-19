@@ -1,9 +1,8 @@
 import Greeting from "@/components/Greeting";
-import Image from "next/image";
 import { images, creativeNames, addresses } from "/data";
 import CarouselDetail from "@/components/Carousel";
 
-const recommendedBarbers = creativeNames.map((name, index) => ({
+export const recommendedBarbers = creativeNames.map((name, index) => ({
   id: index + 1,
   image: images[index],
   name,

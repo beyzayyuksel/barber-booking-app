@@ -3,6 +3,7 @@ import React from "react";
 import { Carousel } from "primereact/carousel";
 import CustomButton from "./CustomButton";
 import Image from "next/image";
+import Link from "next/link";
 
 const CarouselDetail = ({ categories }) => {
   const responsiveOptions = [
@@ -45,7 +46,9 @@ const CarouselDetail = ({ categories }) => {
             <p className="text-gray-dark">{item.address}</p>
           </div>
           <div className="flex justify-center">
-            <CustomButton content={"Reservation"} />
+            <Link href={`/barbers/${item.id}`}>
+              <CustomButton content={"Reservation"} />
+            </Link>
           </div>
         </div>
       </div>
