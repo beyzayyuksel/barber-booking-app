@@ -14,7 +14,6 @@ const popularBarbers = [...recommendedBarbers].reverse();
 export default function Home() {
   return (
     <main>
-      {console.log(recommendedBarbers)}
       <Greeting />
       <h3 className="text-3xl">Recommended</h3>
       <CarouselDetail categories={recommendedBarbers} />
