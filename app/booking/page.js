@@ -1,7 +1,11 @@
-import React from "react";
+import ReservationDetail from "@/components/ReservationDetail";
 
 const Booking = () => {
-  return <div>Booking</div>;
+  return (
+    <div>
+      <ReservationDetail />
+    </div>
+  );
 };
 
 export default Booking;
