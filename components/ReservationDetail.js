@@ -64,7 +64,7 @@ const ReservationDetail = () => {
                   <strong>Service:</strong> {reservation.service.name}
                 </p>
               </div>
-              <div className="flex flex-col gap-4 items-center mr-3">
+              <div className="flex flex-col gap-4 items-center mr-3 md:justify-start justify-center">
                 <p className="text-xl">{reservation.date}</p>
 
                 <i className="pi pi-clock">

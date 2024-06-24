@@ -31,7 +31,7 @@ const CarouselDetail = ({ categories }) => {
 
   const carouselItem = (item) => {
     return (
-      <div className="px-4 py-4 m-3 bg-gray-light rounded-md border border-gray-200 shadow-lg transform transition-transform duration-300 hover:scale-105 text-blue">
+      <div className="px-4 py-4 m-3 bg-gray-light rounded-md border border-gray-200 shadow-lg transform transition-transform duration-300 hover:scale-105 text-blue max-w-72">
         <div className="h-48 w-full relative">
           <Image
             src={item.image}
