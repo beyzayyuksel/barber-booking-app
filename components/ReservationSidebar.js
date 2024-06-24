@@ -48,41 +48,46 @@ const ReservationSidebar = ({ visible, onHide, selectedService }) => {
       visible={visible}
       onHide={onHide}
       position="right"
-      className="p-2 "
+      className="px-2 bg-gray"
     >
       {visible && (
         <div className="">
           <div>
-            <h3>Reservation</h3>
-            <h4>{barber.name}</h4>
-            <h4>{selectedService.name}</h4>
+            <h3 className="text-3xl border-b-2 mb-6">Reservation</h3>
+            <h4 className="text-center font-bold text-blue">{barber.name}</h4>
           </div>
-          <div>
+          <div className="flex flex-col gap-2">
             <Calendar
               value={selectedDate}
               onChange={(e) => setSelectedDate(e.value)}
               inline
-              className="flex justify-center"
+              className="flex justify-center mt-2 border border-gray-200 shadow-xl"
             />
             <Dropdown
               value={selectedTime}
               options={timeOptions}
               onChange={(e) => setSelectedTime(e.value)}
               placeholder="Select a time"
+              className="border border-gray-200 shadow-xl rounded-md"
             />
           </div>
-          <div>
+          <div className="mt-4">
             {selectedService && (
               <>
-                <p>Service: {selectedService.name}</p>
                 <p>
-                  Date: {selectedDate ? selectedDate.toLocaleDateString() : ""}
+                  <strong>Service:</strong> {selectedService.name}
                 </p>
-                <p>Time: {selectedTime}</p>
+                <p>
+                  <strong>Date:</strong>{" "}
+                  {selectedDate ? selectedDate.toLocaleDateString() : ""}
+                </p>
+                <p>
+                  <strong>Time:</strong> {selectedTime}
+                </p>
               </>
             )}
           </div>
-          <div>
+          <div className="flex justify-end">
             <CustomButton
               content={"Confirm Reservation"}
               onclickEvent={handleConfirmReservation}

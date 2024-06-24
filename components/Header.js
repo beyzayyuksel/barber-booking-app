@@ -34,11 +34,19 @@ const Header = () => {
       >
         <div className="pt-5">
           <nav className="flex flex-col text-blue font-medium gap-5">
-            <Link href="/" className="border-b-2 pb-2">
+            <Link
+              href="/"
+              onClick={() => setVisible(false)}
+              className="border-b-2 pb-2"
+            >
               <i className="pi pi-home text-lg pr-1"></i>
               Homepage
             </Link>
-            <Link href="/booking" className="border-b-2 pb-2">
+            <Link
+              href="/booking"
+              onClick={() => setVisible(false)}
+              className="border-b-2 pb-2"
+            >
               <i className="pi pi-calendar text-lg pr-1"></i>
               Booking
             </Link>
