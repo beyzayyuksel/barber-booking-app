@@ -32,11 +32,12 @@ const CarouselDetail = ({ categories }) => {
   const carouselItem = (item) => {
     return (
       <div className="px-4 py-4 m-3 bg-gray-light rounded-md border border-gray-200 shadow-lg transform transition-transform duration-300 hover:scale-105 text-blue max-w-72">
-        <div className="h-48 w-full relative">
+        <div className="h-48 w-49 relative">
           <Image
             src={item.image}
             alt={item.name}
             fill
+            sizes="(max-width: 768px), (max-width: 1200px)"
             className=" rounded-md"
           ></Image>
         </div>

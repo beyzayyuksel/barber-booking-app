@@ -23,7 +23,12 @@ const Services = () => {
             className="flex md:gap-10 gap-2 items-center bg-gray-light p-4 mb-5 rounded-md text-blue border border-gray-400 shadow-lg"
           >
             <div className="relative w-28 h-28 flex-none">
-              <Image src={service.imageUrl} fill className="rounded-md"></Image>
+              <Image
+                src={service.imageUrl}
+                alt={service.name}
+                fill
+                className="rounded-md"
+              ></Image>
             </div>
             <div className="flex flex-col gap-2 md:gap-5 w-full flex-initial">
               <div className="leading-tight md:leading-normal">
