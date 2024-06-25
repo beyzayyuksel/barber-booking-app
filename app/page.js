@@ -10,7 +10,7 @@ export const recommendedBarbers = creativeNames.map((name, index) => ({
   address: addresses[index],
 }));
 
-const popularBarbers = [...recommendedBarbers].reverse();
+const popularBarbers = recommendedBarbers.reverse();
 
 export default function Home() {
   return (
