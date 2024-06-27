@@ -27,7 +27,7 @@ const ReservationSidebar = ({ visible, onHide, selectedService }) => {
       summary: "Reservation made successfully",
       detail: (
         <div>
-          <Link href="/booking">view</Link>
+          <Link href="/booking">view the reservation</Link>
         </div>
       ),
     });
