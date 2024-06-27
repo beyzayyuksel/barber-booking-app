@@ -3,9 +3,11 @@ import { useState } from "react";
 import Link from "next/link";
 import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
+  const path = usePathname();
 
   return (
     <div className="container mx-auto w-11/12 flex items-center justify-between min-h-24 text-blue border-b-2 ">
@@ -14,9 +16,27 @@ const Header = () => {
           Barbers
         </Link>
       </div>
-      <nav className="lg:flex gap-4 hidden">
-        <Link href="/">Homepage</Link>
-        <Link href="/booking">Booking</Link>
+      <nav className="lg:flex gap-8 items-center hidden font-medium ">
+        <Link
+          href="/"
+          className={
+            path === "/"
+              ? " p-2 bg-blue/50 text-gray-light rounded-md"
+              : undefined
+          }
+        >
+          Homepage
+        </Link>
+        <Link
+          href="/booking"
+          className={
+            path.startsWith("/booking")
+              ? " p-2 bg-blue/50 text-gray-light rounded-md border-gray-200 shadow-xl"
+              : undefined
+          }
+        >
+          Booking
+        </Link>
       </nav>
       <Button
         type="button"

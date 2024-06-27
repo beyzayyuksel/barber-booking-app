@@ -23,6 +23,7 @@ module.exports = {
       "gray-dark": "#273444",
       gray: "hsl(227.14deg 13.21% 79.22%)",
       "gray-light": "rgb(240, 241, 243)",
+      white: "#fff",
     },
   },
   plugins: [],
