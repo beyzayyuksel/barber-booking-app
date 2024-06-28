@@ -8,7 +8,7 @@ const CustomButton = ({ content, onclickEvent }) => {
         type="button"
         label={content}
         outlined
-        className="h-2rem w-2rem p-3 bg-blue text-gray-light rounded-xl"
+        className="h-2rem w-2rem p-2 md:p-3 bg-blue text-gray-light rounded-xl"
         onClick={onclickEvent}
       ></Button>
     </div>

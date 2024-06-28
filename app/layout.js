@@ -19,11 +19,11 @@ export default function RootLayout({ children }) {
       <body
         className={
           (inter.className,
-          "bg-gray min-h-screen flex flex-col justify-between")
+          "bg-white min-h-screen flex flex-col justify-between")
         }
       >
         <Header />
-        <div className="container mx-auto w-5/6">{children}</div>
+        <div className="container mx-auto w-11/12 md:w-5/6">{children}</div>
         <Footer />
       </body>
     </html>

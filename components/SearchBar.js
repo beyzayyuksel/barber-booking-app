@@ -26,7 +26,7 @@ const Searchbar = ({ barbers }) => {
         value={searchTerm}
         onChange={handleChange}
         placeholder="Search barbers..."
-        className="p-4 grow"
+        className="p-4 grow border border-gray"
       />
       <Link
         href={{

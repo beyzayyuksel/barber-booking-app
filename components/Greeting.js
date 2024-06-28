@@ -10,7 +10,7 @@ const Greeting = () => {
   });
 
   return (
-    <div className="text-gray-dark flex flex-col gap-4 p-6 my-5 rounded-md bg-gray-light border-2">
+    <div className="text-gray-dark flex flex-col gap-4 p-6 my-5 rounded-md bg-gray border-2">
       <p className="text-5xl font-medium ">Hello!</p>
       <p className="md:text-2xl text-lg">Today is {date}</p>
     </div>
