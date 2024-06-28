@@ -19,11 +19,15 @@
 }
 
 /* Carousel component adjustment */
-.p-carousel .p-carousel-content .p-carousel-prev {
-  position: absolute;
-  left: 0;
-}
-.p-carousel .p-carousel-content .p-carousel-next {
-  position: absolute;
-  right: 0;
+
+@media (max-width: 640px) {
+  .p-carousel .p-carousel-content .p-carousel-prev {
+    position: absolute;
+    left: 0;
+  }
+
+  .p-carousel .p-carousel-content .p-carousel-next {
+    position: absolute;
+    right: 0;
+  }
 }

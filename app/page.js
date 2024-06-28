@@ -17,9 +17,9 @@ export default function Home() {
     <main>
       <Greeting />
       <Searchbar barbers={recommendedBarbers} />
-      <h3 className="text-3xl">Recommended</h3>
+      <h3 className="text-3xl text-gray-dark">Recommended</h3>
       <CarouselDetail categories={recommendedBarbers} />
-      <h3 className="text-3xl">Popular</h3>
+      <h3 className="text-3xl text-gray-dark">Popular</h3>
       <CarouselDetail categories={popularBarbers} />
     </main>
   );
